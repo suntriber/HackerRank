@@ -3,7 +3,7 @@ https://www.hackerrank.com/challenges/compress-the-string/problem?isFullScreen=t
 """
 
 def solution(S):
-    n,s = 0, S[0]
+    s = S[0]
     for i in range(1, len(S)):
         if S[i] == s[-1]:
             s += S[i]
