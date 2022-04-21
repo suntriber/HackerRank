@@ -40,11 +40,14 @@ def time_delta(t1, t2):
     const1 = sum(const1[1:]) if const1[0]=='+' else -sum(const1[1:])
     const2 = sum(const2[1:]) if const2[0]=='+' else -sum(const2[1:])
 
-    dt_diff = (dt2-dt1).total_seconds()
-    const_diff = const2 + const1
 
-    return int(abs(dt_diff+const_diff))
+    # print(f'Diff t1-t2 = {(dt1-dt2).total_seconds()}')
+    # print(f'Diff c1-c2 = {const1-const2}')
 
+
+
+    return str(int(abs(((dt1-dt2).total_seconds()) - (const1 - const2))))
+    
 
 if __name__ == "__main__":
 
