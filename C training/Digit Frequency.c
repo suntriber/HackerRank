@@ -14,6 +14,7 @@ int main() {
     char *s;
     s = malloc(1024 * sizeof(char));
     scanf("%[^\n]", s);
+    // fgets(s, 1024, stdin);
     s = realloc(s, strlen(s) + 1);
     
     int i, tmp;
